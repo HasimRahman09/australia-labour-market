@@ -1,0 +1,470 @@
+/* Header */
+.site-header {
+  padding: 2rem 0 1rem;
+  border-bottom: 2px solid var(--gray-200);
+  margin-bottom: 2rem;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.site-header .subtitle {
+  color: var(--gray-500);
+  font-size: 1rem;
+}
+
+.report-date {
+  display: inline-block;
+  background: var(--blue);
+  color: white;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Section */
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+  color: var(--gray-700);
+}
+
+.section-desc {
+  color: var(--gray-500);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Stat cards */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 1.25rem 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.stat-card.highlight {
+  border-left: 4px solid var(--blue);
+}
+
+.stat-card.warn {
+  border-left: 4px solid var(--amber);
+}
+
+.stat-card.danger {
+  border-left: 4px solid var(--red);
+}
+
+.stat-card.good {
+  border-left: 4px solid var(--green);
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-500);
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.stat-unit {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--gray-500);
+}
+
+.stat-subtitle {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-top: 0.35rem;
+}
+
+.stat-change {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  margin-top: 0.35rem;
+}
+
+.stat-change.up {
+  background: var(--red-light);
+  color: var(--red);
+}
+
+.stat-change.down {
+  background: var(--green-light);
+  color: var(--green);
+}
+
+.stat-change.neutral {
+  background: var(--gray-100);
+  color: var(--gray-500);
+}
+
+/* Charts */
+.chart-container {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin: 1rem 0;
+  box-shadow: var(--shadow);
+}
+
+.chart-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 0.75rem;
+}
+
+/* State comparison */
+.state-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.state-card {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.state-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gray-500);
+  margin-bottom: 0.25rem;
+}
+
+.state-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* Callout */
+.callout {
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.callout.insight {
+  background: var(--blue-light);
+  border: 1px solid #93c5fd;
+}
+
+.callout.warning {
+  background: var(--amber-light);
+  border: 1px solid #fbbf24;
+}
+
+.callout strong {
+  font-weight: 700;
+}
+
+/* Gender comparison */
+.gender-row {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.gender-card {
+  flex: 1;
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.gender-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-500);
+}
+
+.gender-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--gray-200);
+  padding: 1.5rem 0 2rem;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+/* Suburb view */
+.suburb-controls {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.suburb-search {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.suburb-search:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.suburb-sort {
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  background: white;
+  cursor: pointer;
+}
+
+.suburb-count {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  margin-bottom: 0.5rem;
+}
+
+.suburb-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.suburb-table th {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  background: var(--gray-50);
+  border-bottom: 2px solid var(--gray-200);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gray-500);
+  font-weight: 600;
+}
+
+.suburb-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.suburb-table tbody tr:hover {
+  background: var(--gray-50);
+}
+
+.suburb-name-cell {
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.rate-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+
+.pagination button {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius);
+  background: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: var(--gray-50);
+  border-color: var(--blue);
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Map */
+.map-tooltip {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+  min-width: 180px;
+  pointer-events: none;
+}
+
+.map-tooltip-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.map-tooltip-region {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-bottom: 0.25rem;
+}
+
+.map-tooltip-rate {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.map-tooltip-detail {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-top: 0.15rem;
+}
+
+.map-legend {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 0.6rem 0.75rem;
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+  font-size: 0.7rem;
+}
+
+.map-legend-title {
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-bottom: 0.3rem;
+}
+
+.map-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  line-height: 1.4;
+}
+
+.map-legend-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .state-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .gender-row {
+    flex-direction: column;
+  }
+
+  .chart-container {
+    padding: 0.75rem;
+  }
+
+  .suburb-controls {
+    flex-direction: column;
+  }
+
+  .suburb-table {
+    font-size: 0.75rem;
+  }
+
+  .suburb-table th,
+  .suburb-table td {
+    padding: 0.4rem 0.5rem;
+  }
+}
