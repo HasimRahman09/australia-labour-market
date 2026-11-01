@@ -1,16 +1,38 @@
-# React + Vite
+# Australian labour market deep dive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive look at the Australian labour market as of March 2026: what the headline
+unemployment rate hides, how each state compares, whether wages are keeping up with prices, and
+how unemployment varies across 623 NSW suburbs.
 
-Currently, two official plugins are available:
+**Live:** [hasimrahman09.github.io/australia-labour-market](https://hasimrahman09.github.io/australia-labour-market/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What's in it
 
-## React Compiler
+- **Headline numbers and trends.** Employment, unemployment and participation, with long-run series.
+- **Underemployment.** People who have a job but want more hours. This is often a bigger group than the unemployed.
+- **Employment mix.** Full-time against part-time, by sex.
+- **States and territories.** Unemployment and participation side by side.
+- **Wages against inflation.** Annual Wage Price Index growth against CPI, showing when real wages fell.
+- **NSW suburbs.** A searchable map and table of small-area unemployment for December quarter 2025. Rates
+  run from 0.3% to 20.1%.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Data
 
-## Expanding the ESLint configuration
+- ABS Labour Force Survey (6202.0), seasonally adjusted
+- ABS Wage Price Index (6345.0) and Consumer Price Index (6401.0)
+- Department of Employment and Workplace Relations, Small Area Labour Markets (SALM), December quarter 2025
+- ABS SA2 boundaries for the suburb map
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The figures are pre-processed into JSON in `src/data/`. The app itself makes no API calls.
+
+## Stack
+
+React with Vite, Recharts for the charts, and Leaflet with TopoJSON for the map. A GitHub Actions
+workflow builds the site and deploys it to GitHub Pages on every push to `main`.
+
+## Run it
+
+```bash
+npm install
+npm run dev
+```
